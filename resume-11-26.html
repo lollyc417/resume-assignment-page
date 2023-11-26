@@ -1,0 +1,269 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --black-color: #000000;
+            --litegray-color: #eee;
+            --gray-color: #757575;
+            --green-color: #009688;
+        }
+
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+        /* BEGIN: RESET */
+        * {
+            box-sizing: border-box;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-weight: 400;
+
+            font-family: "Roboto", sans-serif margin: 0.625rem 0px;
+        }
+
+        img,
+        picture,
+        video,
+        canvas,
+        svg {
+            display: block;
+            max-width: 100%;
+        }
+
+        /* END: RESET */
+        body {
+            font-family: "Roboto", sans-serif;
+            font-size: 100%;
+            color: var(--black-color);
+            line-height: 1.5;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        p {
+            margin: 0.625rem 0px;
+        }
+
+        h1 {
+            font-size: 1.875rem;
+        }
+
+        h2 {
+            font-size: 1.875rem;
+        }
+
+        a {
+            color: var(--green-color);
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid var(--litegrey-color);
+        }
+
+        .black-text {
+            color: var(--black-color);
+        }
+
+        .grey-text {
+            color: var(--grey-color);
+        }
+
+        .green-text {
+            color: var(--green-color);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--green-color);
+            padding: 0px 8px;
+            color: #ffffff;
+            text-align: center;
+            border-radius: 4px;
+        }
+
+        .stack {
+            display: grid;
+        }
+
+        .stack>* {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
+
+        .bar-progress {
+            color: #ffffff;
+            background-color: var(--litegrey-color);
+            width: 100%;
+            height: 20px;
+            border-radius: 10px;
+        }
+
+        .bar-progress>div {
+            font-size: 0.8rem;
+            background-color: var(--green-color);
+            width: 100%;
+            height: inherit;
+            border-radius: inherit;
+            text-align: center;
+            line-height: 20px;
+            padding: 0px 10px;
+        }
+
+        a[href^="tel"],
+        a[href^="mail"] {
+            text-decoration: none;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 10px auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
+            grid-template-areas: "info word-exp" "info eduction";
+        }
+
+        .contect-wrapper {
+            padding: 1rem;
+        }
+
+        .row {
+            box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+        }
+
+        .row.info {
+            grid-area: info;
+        }
+
+        .header-img-wrapper {
+            place-items: end start;
+        }
+
+        .header-img-wrapper .header-title {
+            font-size: 1.875;
+            font-weight: 400;
+            margin: 10px 20px;
+            z-index: 1;
+            color: #ffffff;
+        }
+
+        .header-img-wrapper .header-img {}
+
+        .row.work-experience {
+            grid-area: word-exp;
+        }
+
+        .row.eduction {
+            grid-area: eduction;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="row info">
+            <div class="header-img-wrapper stack">
+                <h1 class="header-title" style="z-index: 4">Ralph Panzullo</h1>
+                <div
+                    style="background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 50%); width: 100%; height: 100%; z-index: 3">
+                </div>
+                <img class="header-img" style="z-index: 2" src="./self_img.jpg" alt="" />
+            </div>
+            <div class="contect-wrapper">
+                <p><i class="fa-solid fa-house" style="margin-right: 1em"></i>Website Accessibility Specialistt</p>
+                <p><i class="fa-solid fa-suitcase" style="margin-right: 1em"></i>New Jersey</p>
+                <p><i class="fa-solid fa-envelope" style="margin-right: 1em"></i><a
+                        href="mail:rapanzullo@gmail.com">lollyc5@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone" style="margin-right: 1em"></i><a href="tel:5555555555">609-575-1344</a>
+                </p>
+                <hr />
+                <h2>Skills</h2>
+                <p>HTML</p>
+                <div class="bar-progress">
+                    <div style="width: 90%">90%</div>
+                </div>
+                <p>CSS</p>
+                <div class="bar-progress">
+                    <div style="width: 85%">85%</div>
+                </div>
+                <p>Jira</p>
+                <div class="bar-progress">
+                    <div style="width: 80%">80%</div>
+                    <p>Color Contrast Analyzer</p>
+                    <p>Automated Testing</p>
+                    <p>Manual Testing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row work-experience">
+        <div class="contect-wrapper">
+            <h2><i class="fa-solid fa-suitcase" style="margin-right: 1em"></i>Work Experience</h2>
+            <h3>Website Accessibility Speciialist|CVS|Remote position</h3>
+            <h4 class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Jan 2022 -
+                March 2023</h4>
+            <p>Conducted manual and automated website and mobile app testing following WCAG 2.1 Level AA
+                standards using evaluation tools
+                such as JAWS, NVDA, TalkBack, VoiceOver, ANDI, and Axe Dev Tools.</p>
+            <p>
+                Collaborated with developers to remediate bugs identified during testing.
+            </p>
+            <hr/>
+            <h3>Website Accessibility Specialist|Verizon|Remote position</h3>
+            <h4 class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Jan 2020 -
+                Jan- 2023</h4>
+            <p>Recorded defects identified during testing.</p>
+            <p>Collaborated with developers to remediate accessibility issues.</p>
+            <p>Performed regression testing.</p>
+            <p>Demonstrated experience in using assistive technologies including screen readers and screen
+                magnification.</p>
+            <hr />
+            <h3>Assistive Technology Specialist|Advancing Opportunities|Ewing, NJ</h3>
+            <h4 class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Oct 2013 - Dec
+                2019</h4>
+            <p>Evaluated and recommended appropriate assistive technology solutions for consumers.</p>
+            <p>Provided training on using assistive technology to navigate challenging web pages with screen
+                readers.</p>
+            <p> Educated senior citizens with varying skill sets on using assistive technology features on
+                iPad, Windows 7, and Windows 10.</p>
+            <hr />
+            <h3>Assistive Technology Specialist|The College of New Jersey|Ewing, NJ</h3>
+            <h4 class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Oct 2013 - Dec
+                2019</h4>
+            <p>Provided assistive technology training to individuals with visual and cognitive impairments</p>
+            <p>Provided progress reports and recommendations for future training to the New Jersey Commission for the
+                Blind and Visually
+                Impaired regarding the clients I served.</p>
+
+        </div>
+        <div class="w3-container">
+            <div class="contect-wrapper">
+                <h2>Education</h2>
+                <h3>LasComp Institute of IT</h3>
+                <p class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Oct 2023 -
+                    present</p>
+                <p>Web Developer</p>
+                <h2>Education</h2>
+                <h3>The College of New Jersey|Ewing, NJ</h3>
+                <p class="green-text"><i class="fa-solid fa-calendar-days" style="margin-right: 1em"></i>Fall 2005 - Dec
+                    2009</p>
+                <p>Masters Degree in Elementary and Special Education</p>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
